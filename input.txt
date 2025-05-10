@@ -1,0 +1,23 @@
+states:q0,q1,q2
+input_symbols:0,1,2,3,4,5,6,7,8,9,+,-,*,/,(,),$
+stack_symbols:X
+start_state:q0
+accept_states:q2
+transitions:
+q0 ( λ -> q0 X
+q0 0 λ -> q1 X
+q0 1 λ -> q1 X
+q0 2 λ -> q1 X
+q0 3 λ -> q1 X
+q0 4 λ -> q1 X
+q0 5 λ -> q1 X
+q0 6 λ -> q1 X
+q0 7 λ -> q1 X
+q0 8 λ -> q1 X
+q0 9 λ -> q1 X
+q1 ) X -> q1 λ
+q1 + X -> q0 λ
+q1 - X -> q0 λ
+q1 * X -> q0 λ
+q1 / X -> q0 λ
+q1 $ X -> q2 λ
